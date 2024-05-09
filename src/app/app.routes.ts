@@ -1,3 +1,8 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { ListadoComponent } from './color/listado/listado.component';
+export const routes: Routes = [
+	{ path: 'color', redirectTo: 'color/listado', pathMatch: 'full'},
+  	{ path: 'color/listado', component: ListadoComponent },
+  
+  ];
